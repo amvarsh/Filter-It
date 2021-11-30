@@ -51,5 +51,5 @@ Upon submitting the filter and parameters selected, the output will be displayed
 ### Color Focus
 | Input | Ouput |
 | :---: | :---: |
-| ![image](https://user-images.githubusercontent.com/70822829/143008068-fb185799-7a5c-4941-9a98-b0936cfb07b3.png)| ![image](https://user-images.githubusercontent.com/70822829/143008104-c3585d73-7a93-4154-bc7f-2c12372e9315.png) |
+| ![image](https://user-images.githubusercontent.com/56351732/144131988-68515282-f80a-413a-9f30-109e8eecba9c.jpeg)| ![image](https://user-images.githubusercontent.com/56351732/144131995-4d7f66d9-add0-40da-ae56-7e74fb775a88.jpeg) |
 
