@@ -3,8 +3,9 @@ An Image/Video Filtering Web Application based on OpenCV
 
 ## How to run the application from a local host:
 ```
-git clone https://github.com/arunimadivya/Image-Video-Filter-WebApp.git
-streamlit run filter_app.py
+git clone https://github.com/amvarsh/Filter-It.git
+pip install -r requirements.txt
+streamlit run filter_it.py
 ```
 <img src="https://user-images.githubusercontent.com/70822829/142992870-1111f86b-b48c-4bdb-b2ed-910eec4c7699.jpg" width="770">
 
