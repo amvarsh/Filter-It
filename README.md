@@ -1,6 +1,9 @@
 # Filter-It
 An Image/Video Filtering Web Application based on OpenCV
 
+# Preview
+![](https://user-images.githubusercontent.com/56351732/144137832-a0116238-cfd3-4e8c-9d73-0f0d6c648104.gif)
+
 ## How to run the application from a local host:
 ```
 git clone https://github.com/amvarsh/Filter-It.git
