@@ -36,7 +36,7 @@ Upon submitting the filter and parameters selected, the output will be displayed
 ### Color Pencil Sketch
 | Input | Ouput |
 | :---: | :---: |
-| ![image](https://user-images.githubusercontent.com/56351732/143311999-c2e4b9d6-dc30-4d95-b4e2-d6f579a7213c.jpg)| ![image](https://user-images.githubusercontent.com/56351732/143311990-9b6b255c-26f1-4630-bcae-6e363e5f148c.png) | 
+| ![image](https://user-images.githubusercontent.com/56351732/144130416-3534621b-4a19-4976-b5db-025a7b6083d8.jpeg)| ![image](https://user-images.githubusercontent.com/56351732/144130426-7212f30e-a4ca-4637-b057-2239d2190f1d.jpeg) | 
 
 ### Negative
 | Input | Ouput |
