@@ -168,22 +168,24 @@ def applyFilter(option, input_format, file):
             kernel = st.sidebar.slider('Select kernel size', 3, 101, 3, step =2)
         
         elif option =="Color Extract":
-            l_r = st.sidebar.slider('Lower bound red', 0, 255, 50)
-            l_g = st.sidebar.slider('Lower bound green', 0, 255, 50)
-            l_b = st.sidebar.slider('Lower bound blue', 0, 255, 50)
-            
-            u_r = st.sidebar.slider('Upper bound red', 0, 255, 150)
-            u_g = st.sidebar.slider('Upper bound green', 0, 255, 150)
-            u_b = st.sidebar.slider('Upper bound blue', 0, 255, 150)
+            st.sidebar.write("Lower Bounds")
+            l_hue = st.sidebar.slider('Hue', 0, 180, 50)
+            l_saturation = st.sidebar.slider('Saturation', 0, 255, 50)
+            l_value = st.sidebar.slider('Value', 0, 255, 50)
+            st.sidebar.write("Upper Bounds")
+            u_hue = st.sidebar.slider('Hue', 0, 180, 150)
+            u_saturation = st.sidebar.slider('Saturation', 0, 255, 150)
+            u_value = st.sidebar.slider('Value', 0, 255, 150)
         
         elif option =="Color Focus":
-            l_r = st.sidebar.slider('Lower bound red', 0, 255, 50)
-            l_g = st.sidebar.slider('Lower bound green', 0, 255, 50)
-            l_b = st.sidebar.slider('Lower bound blue', 0, 255, 50)
-            
-            u_r = st.sidebar.slider('Upper bound red', 0, 255, 150)
-            u_g = st.sidebar.slider('Upper bound green', 0, 255, 150)
-            u_b = st.sidebar.slider('Upper bound blue', 0, 255, 150)
+            st.sidebar.write("Lower Bounds")
+            l_hue = st.sidebar.slider('Hue', 0, 180, 50)
+            l_saturation = st.sidebar.slider('Saturation', 0, 255, 50)
+            l_value = st.sidebar.slider('Value', 0, 255, 50)
+            st.sidebar.write("Upper Bounds")
+            u_hue = st.sidebar.slider('Hue', 0, 180, 150)
+            u_saturation = st.sidebar.slider('Saturation', 0, 255, 150)
+            u_value = st.sidebar.slider('Value', 0, 255, 150)
 
         elif option=="Duo-tone":
             exp = st.sidebar.slider('Exponent factor',0,10,5)
@@ -207,9 +209,9 @@ def applyFilter(option, input_format, file):
                 elif option=="Negative":
                     img=invert(img)
                 elif option=="Color Extract":
-                    img=colorExtract(img, [l_r, l_g, l_b], [u_r, u_g, u_b])
+                    img=colorExtract(img, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                 elif option=="Color Focus":
-                    img=colorFocus(img, [l_r, l_g, l_b], [u_r, u_g, u_b])
+                    img=colorFocus(img, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                 elif option =="Duo-tone":
                     img=duotone(img,exp, [s1,s2], l_d)
                 cv2.imwrite("out.png", img)
@@ -240,9 +242,9 @@ def applyFilter(option, input_format, file):
                     elif option=="Negative":
                         frame=invert(frame)
                     elif option=="Color Extract":
-                        frame=colorExtract(frame, [l_r, l_g, l_b], [u_r, u_g, u_b])
+                        frame=colorExtract(frame, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                     elif option=="Color Focus":
-                        frame=colorFocus(frame, [l_r, l_g, l_b], [u_r, u_g, u_b])
+                        frame=colorFocus(frame, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                     elif option=="Duo-tone":
                         frame=duotone(frame, exp, [s1,s2], l_d)
                     
