@@ -44,12 +44,12 @@ Upon submitting the filter and parameters selected, the output will be displayed
 | ![image](https://user-images.githubusercontent.com/70822829/142995051-77c932cb-533d-409c-b2d5-8e049a2cbd95.png)| ![image](https://user-images.githubusercontent.com/70822829/142995109-446ac629-88ad-4d54-9d2e-ceeefea76014.png) | 
 
 ### Color Extract
-| Input | Ouput (Extracts out green) |
+| Input | Ouput |
 | :---: | :---: |
-| ![image](https://user-images.githubusercontent.com/70822829/142995579-ebc6bcba-8c18-40d6-85c6-2871c2f78fc4.png)| ![image](https://user-images.githubusercontent.com/70822829/142995611-4de8d4e0-0a71-47c7-83a5-0782d0df175d.png) | 
+| ![image](https://user-images.githubusercontent.com/56351732/144130912-78b6c606-58d4-4311-8542-0dcb7285287d.jpeg) | ![image](https://user-images.githubusercontent.com/56351732/144130905-7e10b125-4ebd-462b-a02b-bcbd532436fb.jpeg) | 
 
 ### Color Focus
-| Input | Ouput (Focuses green) |
+| Input | Ouput |
 | :---: | :---: |
 | ![image](https://user-images.githubusercontent.com/70822829/143008068-fb185799-7a5c-4941-9a98-b0936cfb07b3.png)| ![image](https://user-images.githubusercontent.com/70822829/143008104-c3585d73-7a93-4154-bc7f-2c12372e9315.png) |
 
