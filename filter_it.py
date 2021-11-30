@@ -307,15 +307,16 @@ else:
         if os.path.isfile(file.name)==False:
             with open(file.name,"wb") as f:
                 f.write(file.getbuffer())
-        
-        video = open(file.name, "rb") 
-        st.text("Your original video")
-        st.video(video)
+        with col1:
+            video = open(file.name, "rb") 
+            st.text("Your original video")
+            st.video(video)
         if os.path.isfile("out.avi"):
             os.remove("out.avi")
         applyFilter(option, 'video', file)
         os.popen("ffmpeg -analyzeduration 2147483647 -probesize 2147483647 -y -i out.avi -ac 2 -b:v 2000k -c:a aac -c:v libx264 -b:a 160k -vprofile high -bf 0 -strict experimental -f mp4 out.mp4".format(input = 'out', output = 'out')).read()
         if os.path.isfile("out.mp4") and os.path.isfile("out."):
-            st.text("Your edited video")
-            out = open("out.mp4", "rb")
-            st.video(out) 
+            with col2:
+                st.text("Your edited video")
+                out = open("out.mp4", "rb")
+                st.video(out) 
