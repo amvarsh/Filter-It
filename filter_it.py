@@ -315,7 +315,7 @@ else:
             os.remove("out.avi")
         applyFilter(option, 'video', file)
         os.popen("ffmpeg -analyzeduration 2147483647 -probesize 2147483647 -y -i out.avi -ac 2 -b:v 2000k -c:a aac -c:v libx264 -b:a 160k -vprofile high -bf 0 -strict experimental -f mp4 out.mp4".format(input = 'out', output = 'out')).read()
-        if os.path.isfile("out.mp4") and os.path.isfile("out."):
+        if os.path.isfile("out.mp4") and os.path.isfile("out.avi"):
             with col2:
                 st.text("Your edited video")
                 out = open("out.mp4", "rb")
