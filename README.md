@@ -2,12 +2,12 @@
 An Image/Video Filtering Web Application based on OpenCV
 
 
-## <img src="https://cdn-icons.flaticon.com/png/512/2116/premium/2116837.png?token=exp=1638376196~hmac=1bc46c817e20527c189ac726fa36371a" width="30"> Preview 
+## Preview 
 
 ![final](https://user-images.githubusercontent.com/56351732/144272641-b50d475e-d368-4ff1-a3ed-178f0515fdf1.gif)
 
 
-## <img src="https://cdn-icons.flaticon.com/png/512/3038/premium/3038089.png?token=exp=1638376160~hmac=360a42fcec6d84c3494396f1740a38a9" width="30"> Packages Used 
+## Packages Used 
 * OpenCV: opencv_python==4.5.4.58
 * Streamlit: streamlit==1.1.0
 * Pillow: Pillow==8.4.0
@@ -16,7 +16,7 @@ An Image/Video Filtering Web Application based on OpenCV
 * FFmpeg: http://www.ffmpeg.org/download.html
 
 
-## <img src="https://cdn-icons-png.flaticon.com/512/495/495530.png" width="30"> Getting Started 
+## Getting Started 
 Access Filter-It! at the following link: <a 
    href="https://share.streamlit.io/amvarsh/filter-it/main/filter_it.py">
   <img src="https://img.shields.io/badge/Filter--It-Streamlit-red" width=130>
@@ -28,7 +28,7 @@ Access Filter-It! at the following link: <a
 The webapp will open on browser. The user can then upload an image or video of any of the listed file formats.
 
 
-## <img src="https://cdn-icons-png.flaticon.com/512/1205/1205526.png" width="30"> Supported File Formats 
+## Supported File Formats 
 * .jpg
 * .png
 * .jpeg
@@ -36,7 +36,7 @@ The webapp will open on browser. The user can then upload an image or video of a
 
 ![upload_e85dc01429c536bda3822daed0dd543c](https://user-images.githubusercontent.com/56351732/144273114-9e9b5d80-51c0-4b40-9765-07f13ce8dc53.png)
 
-## <img src="https://cdn-icons-png.flaticon.com/512/3204/3204021.png" width="30"> Image/Video Filters 
+## Image/Video Filters 
 1. **Brightness**: Increase or decrease brightness
 2. **Pencil Sketch**: Pencil sketch of image
 3. **Negative**: Invert image to create a negative effect
@@ -51,7 +51,7 @@ Select any of the filters available from the dropdown meny on side panel.
 
 Depending on the filter selected, the appropriate parameter slidebars will appear.
 
-## <img src="https://cdn-icons-png.flaticon.com/512/3132/3132084.png" width="30"> Customisable Filter Parameters 
+## Customisable Filter Parameters 
 
 * Brightness
     * Scale
@@ -65,14 +65,14 @@ Depending on the filter selected, the appropriate parameter slidebars will appea
     * Kernel Size
     * Area Size
 
-## <img src="https://cdn-icons-png.flaticon.com/512/916/916054.png" width="30"> Output Display 
+## Output Display 
 
 Upon clicking <img src="https://img.shields.io/badge/Submit-_-green" width="70"> button and parameters selected, the output will be displayed below the input.
 
 ![Screenshot 2021-12-01 212820](https://user-images.githubusercontent.com/56351732/144273242-fa485c4c-a5d5-4243-8442-e544e16419be.png)
 
 
-## <img src="https://cdn-icons.flaticon.com/png/512/2914/premium/2914192.png?token=exp=1638375841~hmac=4dbf0560287ffb6f46020bb19cbbed4e" width="30"> Sample Input and Output 
+## Sample Input and Output 
 ### Brightness Filter
 | Input | Output(darkened) | Output(brightened) |
 | :---: | :---: | :---: |
@@ -103,7 +103,7 @@ Upon clicking <img src="https://img.shields.io/badge/Submit-_-green" width="70">
 | :---: | :---: |
 | <img src="https://user-images.githubusercontent.com/70822829/144203186-5fa9da01-f594-42bf-8b63-047faa294228.png">|<img src="https://user-images.githubusercontent.com/70822829/144203222-42b880d0-29f4-4947-b0bc-7dfe6cceb8c3.png"> |
 
-## <img src="https://cdn-icons-png.flaticon.com/512/3791/3791146.png" width="30"> Contributors 
+## Contributors 
 
 <img src="https://user-images.githubusercontent.com/56351732/144274356-b4e1bcfc-3010-4fd0-8393-af090a461270.png" width=40> [**Arunima Divya**](https://github.com/arunimadivya/)
 
