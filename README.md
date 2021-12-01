@@ -1,13 +1,13 @@
-# Filter-It <img src="https://cdn-icons-png.flaticon.com/512/5848/5848802.png" width="50">
+# <img src="https://cdn-icons-png.flaticon.com/512/5848/5848802.png" width="50"> Filter-It 
 An Image/Video Filtering Web Application based on OpenCV
 
 
-## Preview <img src="https://cdn-icons.flaticon.com/png/512/2116/premium/2116837.png?token=exp=1638376196~hmac=1bc46c817e20527c189ac726fa36371a" width="30">
+## <img src="https://cdn-icons.flaticon.com/png/512/2116/premium/2116837.png?token=exp=1638376196~hmac=1bc46c817e20527c189ac726fa36371a" width="30"> Preview 
 
-![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_6e3209856bbd2450dbe7e6092f1f223e.gif)
+![final](https://user-images.githubusercontent.com/56351732/144272641-b50d475e-d368-4ff1-a3ed-178f0515fdf1.gif)
 
 
-## Packages Used <img src="https://cdn-icons.flaticon.com/png/512/3038/premium/3038089.png?token=exp=1638376160~hmac=360a42fcec6d84c3494396f1740a38a9" width="30">
+## <img src="https://cdn-icons.flaticon.com/png/512/3038/premium/3038089.png?token=exp=1638376160~hmac=360a42fcec6d84c3494396f1740a38a9" width="30"> Packages Used 
 * OpenCV: opencv_python==4.5.4.58
 * Streamlit: streamlit==1.1.0
 * Pillow: Pillow==8.4.0
@@ -16,14 +16,14 @@ An Image/Video Filtering Web Application based on OpenCV
 * FFmpeg: http://www.ffmpeg.org/download.html
 
 
-## Getting Started <img src="https://cdn-icons-png.flaticon.com/512/495/495530.png" width="30">
+## <img src="https://cdn-icons-png.flaticon.com/512/495/495530.png" width="30"> Getting Started 
 Access Filter-It! at the following link: <a 
    href="https://share.streamlit.io/amvarsh/filter-it/main/filter_it.py">
   <img src="https://img.shields.io/badge/Filter--It-Streamlit-red" width=130>
 
 </a>
 
-![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_56a56bb683ae8ac5963fb9cc822be1be.png)
+![image](https://user-images.githubusercontent.com/56351732/144272956-bb0e9c7a-576f-4a38-b4c7-c1bfe3d7ef97.png)
 
 The webapp will open on browser. The user can then upload an image or video of any of the listed file formats.
 
@@ -34,8 +34,7 @@ The webapp will open on browser. The user can then upload an image or video of a
 * .jpeg
 * .mp4
 
-![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_5bd1556e9f674b109ff45831730b6f84.png)
-
+![upload_e85dc01429c536bda3822daed0dd543c](https://user-images.githubusercontent.com/56351732/144273114-9e9b5d80-51c0-4b40-9765-07f13ce8dc53.png)
 
 ## Image/Video Filters <img src="https://cdn-icons-png.flaticon.com/512/3204/3204021.png" width="30">
 1. **Brightness**: Increase or decrease brightness
@@ -47,9 +46,7 @@ The webapp will open on browser. The user can then upload an image or video of a
 
 Select any of the filters available from the dropdown meny on side panel.
 
-![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_ab8bee5b3f2069aaaff7386ea750fdea.png)
-
-
+![Screenshot 2021-12-01 211722](https://user-images.githubusercontent.com/56351732/144273146-dd66a576-76c1-4f22-a9d4-28f1bf03b4be.png)
 
 
 Depending on the filter selected, the appropriate parameter slidebars will appear.
@@ -72,7 +69,7 @@ Depending on the filter selected, the appropriate parameter slidebars will appea
 
 Upon clicking <img src="https://img.shields.io/badge/Submit-_-green" width="70"> button and parameters selected, the output will be displayed below the input.
 
-<img src="https://codimd.s3.shivering-isles.com/demo/uploads/upload_54d4ceda4c9ece36dc4dc7546e334655.png" width="770">
+![Screenshot 2021-12-01 212820](https://user-images.githubusercontent.com/56351732/144273242-fa485c4c-a5d5-4243-8442-e544e16419be.png)
 
 
 ## Sample Input and Output <img src="https://cdn-icons.flaticon.com/png/512/2914/premium/2914192.png?token=exp=1638375841~hmac=4dbf0560287ffb6f46020bb19cbbed4e" width="30">
@@ -107,12 +104,8 @@ Upon clicking <img src="https://img.shields.io/badge/Submit-_-green" width="70">
 | <img src="https://user-images.githubusercontent.com/70822829/144203186-5fa9da01-f594-42bf-8b63-047faa294228.png" width="400">|<img src="https://user-images.githubusercontent.com/70822829/144203222-42b880d0-29f4-4947-b0bc-7dfe6cceb8c3.png" width="400"> |
 
 ## Contributors <img src="https://cdn-icons-png.flaticon.com/512/3791/3791146.png" width="30">
-<p href="https://github.com/arunimadivya/">
-  <img src="https://cdn-icons.flaticon.com/png/512/4140/premium/4140047.png?token=exp=1638372244~hmac=eba20986161a85e71137f22b87e93630" width=40>
-    Arunima Divya
-</p> 
 
-<p href="https://github.com/amvarsh/">
-  <img src="https://cdn-icons.flaticon.com/png/512/4140/premium/4140038.png?token=exp=1638372231~hmac=864f4904c49dcb5826af0e9ccaf1c858" width=40>
-    Amrita Varshini E R
-</p> 
+<img src="https://user-images.githubusercontent.com/56351732/144274356-b4e1bcfc-3010-4fd0-8393-af090a461270.png" width=40> [**Arunima Divya**](https://github.com/arunimadivya/)
+
+<img src="https://user-images.githubusercontent.com/56351732/144274340-4a1f243f-ea68-4636-b660-01cb377821d9.png" width=40> [**Amrita Varshini E R**](https://github.com/amvarsh/)
+
