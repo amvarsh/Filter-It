@@ -101,7 +101,7 @@ Upon clicking <img src="https://img.shields.io/badge/Submit-_-green" width="70">
 ### Cartoon
 | Input | Output |
 | :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/70822829/144203186-5fa9da01-f594-42bf-8b63-047faa294228.png" width="400">|<img src="https://user-images.githubusercontent.com/70822829/144203222-42b880d0-29f4-4947-b0bc-7dfe6cceb8c3.png" width="400"> |
+| <img src="https://user-images.githubusercontent.com/70822829/144203186-5fa9da01-f594-42bf-8b63-047faa294228.png">|<img src="https://user-images.githubusercontent.com/70822829/144203222-42b880d0-29f4-4947-b0bc-7dfe6cceb8c3.png"> |
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/3791/3791146.png" width="30"> Contributors 
 
