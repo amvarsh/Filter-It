@@ -1,7 +1,18 @@
 # <img src="https://cdn-icons-png.flaticon.com/512/5848/5848802.png" width="50"> Filter-It 
 An Image/Video Filtering Web Application based on OpenCV
 
-
+Table of Contents
+=================
+- [Preview](Preview)
+- [Packages Used](Packages-Used)
+- [Getting Started](Getting-Started)
+- [Supported File Formats](Supported-File-Formats)
+- [Image/Video Filters ](Image/Video-Filters )
+- [Customizable Filter Parameters ](Customizable-Filter-Parameters )
+- [Output Display ](Output-Display)
+- [Sample Input and Output](Sample-Input-and-Output)
+- [Contributors ](Contributors )
+ 
 ## Preview 
 
 ![final](https://user-images.githubusercontent.com/56351732/144272641-b50d475e-d368-4ff1-a3ed-178f0515fdf1.gif)
