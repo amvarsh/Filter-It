@@ -89,10 +89,11 @@ Upon clicking <img src="https://img.shields.io/badge/Submit-_-green" width="70">
 | :---: | :---: | :---: |
 |<img src="https://user-images.githubusercontent.com/56351732/143309525-d3c0835a-d24c-4647-80d4-7e25230cde9b.png" width="310">| <img src="https://user-images.githubusercontent.com/56351732/143309564-864bddce-615e-4219-ae84-a4288b80c3b8.png" width="310">| <img src="https://user-images.githubusercontent.com/56351732/143309645-4538a70d-028a-4d71-8be9-096b617a8d3e.png" width="310">|
 
-### Color Pencil Sketch
+### Pencil Sketch
 | Input | Output |
 | :---: | :---: |
 | ![image](https://user-images.githubusercontent.com/56351732/144130416-3534621b-4a19-4976-b5db-025a7b6083d8.jpeg)| ![image](https://user-images.githubusercontent.com/56351732/144130426-7212f30e-a4ca-4637-b057-2239d2190f1d.jpeg) | 
+| ![image](https://user-images.githubusercontent.com/56351732/144280007-46be12e5-e4b6-4260-ab5c-f5d85c5b7129.gif)| ![image](https://user-images.githubusercontent.com/56351732/144280010-5fb6537b-3345-44d1-a0aa-cb3881151771.gif) | 
 
 ### Negative
 | Input | Output |
