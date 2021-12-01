@@ -51,7 +51,7 @@ Select any of the filters available from the dropdown meny on side panel.
 
 Depending on the filter selected, the appropriate parameter slidebars will appear.
 
-## Customisable Filter Parameters 
+## Customizable Filter Parameters 
 
 * Brightness
     * Scale
