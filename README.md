@@ -32,32 +32,32 @@ Upon submitting the filter and parameters selected, the output will be displayed
 
 ## Sample Input and Output
 ### Brightness Filter
-| Input | Ouput(darkened) | Output(brightened) |
+| Input | Output(darkened) | Output(brightened) |
 | :---: | :---: | :---: |
 |<img src="https://user-images.githubusercontent.com/56351732/143309525-d3c0835a-d24c-4647-80d4-7e25230cde9b.png" width="310">| <img src="https://user-images.githubusercontent.com/56351732/143309564-864bddce-615e-4219-ae84-a4288b80c3b8.png" width="310">| <img src="https://user-images.githubusercontent.com/56351732/143309645-4538a70d-028a-4d71-8be9-096b617a8d3e.png" width="310">|
 
 ### Color Pencil Sketch
-| Input | Ouput |
+| Input | Output |
 | :---: | :---: |
 | ![image](https://user-images.githubusercontent.com/56351732/144130416-3534621b-4a19-4976-b5db-025a7b6083d8.jpeg)| ![image](https://user-images.githubusercontent.com/56351732/144130426-7212f30e-a4ca-4637-b057-2239d2190f1d.jpeg) | 
 
 ### Negative
-| Input | Ouput |
+| Input | Output |
 | :---: | :---: |
 | ![image](https://user-images.githubusercontent.com/70822829/142995051-77c932cb-533d-409c-b2d5-8e049a2cbd95.png)| ![image](https://user-images.githubusercontent.com/70822829/142995109-446ac629-88ad-4d54-9d2e-ceeefea76014.png) | 
 
 ### Color Extract
-| Input | Ouput |
+| Input | Output |
 | :---: | :---: |
 | ![image](https://user-images.githubusercontent.com/56351732/144130912-78b6c606-58d4-4311-8542-0dcb7285287d.jpeg) | ![image](https://user-images.githubusercontent.com/56351732/144130905-7e10b125-4ebd-462b-a02b-bcbd532436fb.jpeg) | 
 
 ### Color Focus
-| Input | Ouput |
+| Input | Output |
 | :---: | :---: |
 | ![image](https://user-images.githubusercontent.com/56351732/144131988-68515282-f80a-413a-9f30-109e8eecba9c.jpeg)| ![image](https://user-images.githubusercontent.com/56351732/144131995-4d7f66d9-add0-40da-ae56-7e74fb775a88.jpeg) |
 
 ### Cartoon
-| Input | Ouput |
+| Input | Output |
 | :---: | :---: |
 | <img src="https://user-images.githubusercontent.com/70822829/144203186-5fa9da01-f594-42bf-8b63-047faa294228.png" width="400">|<img src="https://user-images.githubusercontent.com/70822829/144203222-42b880d0-29f4-4947-b0bc-7dfe6cceb8c3.png" width="400"> |
 
