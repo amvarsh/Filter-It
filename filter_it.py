@@ -133,7 +133,7 @@ def cartoon(frame, kernel, area_size):
     edges = cv2.adaptiveThreshold(blurred, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, area_size, 9)
 
     # Use bilateral filter to reduce noise in original image while preserving edges.  
-    img = cv2.bilateralFilter(frame, 9, 150, 150)
+    img = cv2.bilateralFilter(frame, area_size, 150, 150)
 
     # Perform bitwise_and operation between mask of edges and blurred image to add edges onto image, resulting in cartoonish look.
     cartoon_img = cv2.bitwise_and(img, img, mask=edges)
@@ -176,9 +176,8 @@ def applyFilter(option, input_format, file):
             u_value = st.sidebar.slider('Value', 0, 255, 150)
 
         elif option=="Cartoon":
-            kernel = st.sidebar.slider('Select kernel size', 3, 15, 3, step =2)
+            kernel = st.sidebar.slider('Select kernel size', 3, 11, 3, step =2)
             area_size = st.sidebar.slider('Select pixel neighborhood size', 3, 15, 9, step =2)
-            
 
         submit = st.form_submit_button(label='Submit')
     
@@ -233,7 +232,7 @@ def applyFilter(option, input_format, file):
                     elif option=="Color Focus":
                         frame=colorFocus(frame, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                     elif option=="Cartoon":
-                        frame=cartoon(frame, kernel)
+                        frame=cartoon(frame, kernel, area_size)
                     
                     # Save altered video frame into output file
                     out.write(frame)
