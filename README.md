@@ -1,36 +1,81 @@
-# Filter-It
+# Filter-It <img src="https://cdn-icons-png.flaticon.com/512/5848/5848802.png" width="50">
 An Image/Video Filtering Web Application based on OpenCV
 
-# Preview
-![](https://user-images.githubusercontent.com/56351732/144137832-a0116238-cfd3-4e8c-9d73-0f0d6c648104.gif)
 
-## How to run the application from a local host:
-```
-git clone https://github.com/amvarsh/Filter-It.git
-pip install -r requirements.txt
-streamlit run filter_it.py
-```
-<img src="https://user-images.githubusercontent.com/70822829/142992870-1111f86b-b48c-4bdb-b2ed-910eec4c7699.jpg" width="770">
+## Preview <img src="https://cdn-icons.flaticon.com/png/512/2116/premium/2116837.png?token=exp=1638376196~hmac=1bc46c817e20527c189ac726fa36371a" width="30">
 
-The webapp will open on browser. The user can then upload an image or video. Accepted file types are listed.
-
-<img src="https://user-images.githubusercontent.com/70822829/142992332-fe09391d-b1d6-452a-8730-5e62ebd28e62.png" width="770">
-
-The user can then select from the list of filters, and depending on the filter selected, the appropriate parameter slidebars will appear. 
-
-<img src="https://user-images.githubusercontent.com/70822829/143723562-67a59158-5e6e-4c99-a3f3-c4fac7354718.png" width="770">
-
-For example, if brightness filter is selected, there will be one slidebar to select brightness factor, or if color extract is selected, 6 slidebars will appear for picking the lower and upper bound values of the color to be extracted. 
-
-<img src="https://user-images.githubusercontent.com/70822829/143723574-20c2e827-4d52-4808-a75f-211d4fd3ad8d.png" width="350">
+![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_6e3209856bbd2450dbe7e6092f1f223e.gif)
 
 
-Upon submitting the filter and parameters selected, the output will be displayed below the input.
+## Packages Used <img src="https://cdn-icons.flaticon.com/png/512/3038/premium/3038089.png?token=exp=1638376160~hmac=360a42fcec6d84c3494396f1740a38a9" width="30">
+* OpenCV: opencv_python==4.5.4.58
+* Streamlit: streamlit==1.1.0
+* Pillow: Pillow==8.4.0
+* NumPy: numpy==1.21.3
+* libgtk2.0-dev
+* FFmpeg: http://www.ffmpeg.org/download.html
 
-<img src="https://user-images.githubusercontent.com/70822829/143723472-03a15b37-5d29-4b48-9421-9c2bb53b7f2c.png" width="770">
+
+## Getting Started <img src="https://cdn-icons-png.flaticon.com/512/495/495530.png" width="30">
+Access Filter-It! at the following link: <a 
+   href="https://share.streamlit.io/amvarsh/filter-it/main/filter_it.py">
+  <img src="https://img.shields.io/badge/Filter--It-Streamlit-red" width=130>
+
+</a>
+
+![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_56a56bb683ae8ac5963fb9cc822be1be.png)
+
+The webapp will open on browser. The user can then upload an image or video of any of the listed file formats.
 
 
-## Sample Input and Output
+## Supported File Formats <img src="https://cdn-icons-png.flaticon.com/512/1205/1205526.png" width="30">
+* .jpg
+* .png
+* .jpeg
+* .mp4
+
+![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_5bd1556e9f674b109ff45831730b6f84.png)
+
+
+## Image/Video Filters <img src="https://cdn-icons-png.flaticon.com/512/3204/3204021.png" width="30">
+1. **Brightness**: Increase or decrease brightness
+2. **Pencil Sketch**: Pencil sketch of image
+3. **Negative**: Invert image to create a negative effect
+4. **Color Extract**: Extract pixels in image of specified color-range
+5. **Color Focus**: Focus on pixels specified color-range by changing others to grayscale 
+6. **Cartoon**: Cartoonistic illustration of image
+
+Select any of the filters available from the dropdown meny on side panel.
+
+![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_ab8bee5b3f2069aaaff7386ea750fdea.png)
+
+
+
+
+Depending on the filter selected, the appropriate parameter slidebars will appear.
+
+## Customisable Filter Parameters <img src="https://cdn-icons-png.flaticon.com/512/3132/3132084.png" width="30">
+
+* Brightness
+    * Scale
+* Pencil Sketch
+    * Kernel Size
+* Color Extract, Color Focus
+    * Hue, Saturation, Values
+        * Upper Bound
+        * Lower Bound
+* Cartoon
+    * Kernel Size
+    * Area Size
+
+## Output Display <img src="https://cdn-icons-png.flaticon.com/512/916/916054.png" width="30">
+
+Upon clicking <img src="https://img.shields.io/badge/Submit-_-green" width="70"> button and parameters selected, the output will be displayed below the input.
+
+<img src="https://codimd.s3.shivering-isles.com/demo/uploads/upload_54d4ceda4c9ece36dc4dc7546e334655.png" width="770">
+
+
+## Sample Input and Output <img src="https://cdn-icons.flaticon.com/png/512/2914/premium/2914192.png?token=exp=1638375841~hmac=4dbf0560287ffb6f46020bb19cbbed4e" width="30">
 ### Brightness Filter
 | Input | Output(darkened) | Output(brightened) |
 | :---: | :---: | :---: |
@@ -61,3 +106,13 @@ Upon submitting the filter and parameters selected, the output will be displayed
 | :---: | :---: |
 | <img src="https://user-images.githubusercontent.com/70822829/144203186-5fa9da01-f594-42bf-8b63-047faa294228.png" width="400">|<img src="https://user-images.githubusercontent.com/70822829/144203222-42b880d0-29f4-4947-b0bc-7dfe6cceb8c3.png" width="400"> |
 
+## Contributors <img src="https://cdn-icons-png.flaticon.com/512/3791/3791146.png" width="30">
+<p href="https://github.com/arunimadivya/">
+  <img src="https://cdn-icons.flaticon.com/png/512/4140/premium/4140047.png?token=exp=1638372244~hmac=eba20986161a85e71137f22b87e93630" width=40>
+    Arunima Divya
+</p> 
+
+<p href="https://github.com/amvarsh/">
+  <img src="https://cdn-icons.flaticon.com/png/512/4140/premium/4140038.png?token=exp=1638372231~hmac=864f4904c49dcb5826af0e9ccaf1c858" width=40>
+    Amrita Varshini E R
+</p> 
