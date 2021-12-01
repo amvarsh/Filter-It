@@ -34,14 +34,6 @@ def brightness(frame,val):
     return bright_img
 
 
-# Negative Filter : Invert image to create a negative effect
-def invert(frame): 
-    # To invert the image's pixel values, we must subtract pixel value from 255. This is done using cv2.bitwise_not().
-    negative_img = cv2.bitwise_not(frame)
-    
-    return negative_img
-
-
 # Pencil Sketch : Pencil sketch of image
 def pencilSketch(frame, k_size):   
 
@@ -65,6 +57,14 @@ def pencilSketch(frame, k_size):
     sketch_img=cv2.divide(gray_img,invert_blurred_img, scale=256.0)
     
     return sketch_img
+
+
+# Negative Filter : Invert image to create a negative effect
+def negative(frame): 
+    # To invert the image's pixel values, we must subtract pixel value from 255. This is done using cv2.bitwise_not().
+    negative_img = cv2.bitwise_not(frame)
+    
+    return negative_img
 
 
 # Color Extraction : Display all pixels within specific color range and make rest of the image black.
@@ -192,7 +192,7 @@ def applyFilter(option, input_format, file):
                 elif option=="Pencil Sketch":
                     img=pencilSketch(img,kernel)
                 elif option=="Negative":
-                    img=invert(img)
+                    img=negative(img)
                 elif option=="Color Extract":
                     img=colorExtract(img, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                 elif option=="Color Focus":
@@ -225,7 +225,7 @@ def applyFilter(option, input_format, file):
                     elif option=="Pencil Sketch":
                         frame=pencilSketch(frame,kernel)
                     elif option=="Negative":
-                        frame=invert(frame)
+                        frame=negative(frame)
                     elif option=="Color Extract":
                         frame=colorExtract(frame, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                     elif option=="Color Focus":
