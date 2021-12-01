@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 import os
 
-# 6 Filters : Brightness, Negative, Pencil Sketch, Color Extract, Color Focus, Duo-tone
+# 6 Filters : Brightness, Negative, Pencil Sketch, Color Extract, Color Focus, Cartoon
 
 
 # Brightness Filter : Increase or decrease brightness
@@ -121,36 +121,24 @@ def colorFocus(frame, l, u):
     return focus_img
 
 
-# Duo-tone
-def duotone(img, exp, c, l_d):
-    # Convert exponential factor to range between 1 to 2
-    exp = 1 + exp/100
+def cartoon(frame, kernel, area_size):
+    #Convert image to grayscale
+    gray= cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    # Convert the tone parameters to their appropriate channel numbers. Blue for channel 0, green for channel 1, and so on.
-    colors={'blue':0,'green':1,'red':2,'none':3}
-    for i in range(len(c)):
-        c[i]=colors[c[i]]
+    # Blur the image to reduce noise so that a less of the smaller details are picked up as edges. More blur results in weaker and less edges.
+    blurred = cv2.GaussianBlur(gray, (kernel,kernel),0)
 
-    # Iterate through each channel value and if the user selected the specific channel, increase the pixel values in the channel
-    # using the exponential function.
-    for i in range(3):
-        # If the user selected this channel, increase the values of the pixels exponentially for that channel. This highlights the specific color. 
-        # If the values are too high, they perform clipping to ensure the values do not go above 255.
-        if i in c: 
-            table = np.array([min((i**exp), 255) for i in np.arange(0, 256)]).astype("uint8")
-            img[:, :, i] =cv2.LUT(img[:, :, i], table) 
+    # Gets the edges using adaptive threshold in which the user can specify pixel area size. Larger area means more details are picked up
+    # to be used in the cartoonized image.
+    edges = cv2.adaptiveThreshold(blurred, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, area_size, 9)
 
-        #If the user has not selected this channel, this channel is not part of the 2 tones and so we must lighten the color's appearance or darken it to black.
-        else:
-            if l_d=='light': 
-                # For light option, make these unselected channels lighter by using an exponential value in the range of 0 to 1 with the exponential function. 
-                table = np.array([min((i**(2-exp)), 255) for i in np.arange(0, 256)]).astype("uint8")
-                img[:, :, i] =cv2.LUT(img[:, :, i], table)
-                
-            else: 
-                # For dark option, the unselected channel is darkened all the way down to 0(black).
-                img[:, :, i] = 0
-    return img
+    # Use bilateral filter to reduce noise in original image while preserving edges.  
+    img = cv2.bilateralFilter(frame, 9, 150, 150)
+
+    # Perform bitwise_and operation between mask of edges and blurred image to add edges onto image, resulting in cartoonish look.
+    cartoon_img = cv2.bitwise_and(img, img, mask=edges)
+
+    return cartoon_img
 
 
 # Upon selecting filter to apply, user is given option to select parameter values. After clicking Submit, 
@@ -187,11 +175,10 @@ def applyFilter(option, input_format, file):
             u_saturation = st.sidebar.slider('Saturation', 0, 255, 150)
             u_value = st.sidebar.slider('Value', 0, 255, 150)
 
-        elif option=="Duo-tone":
-            exp = st.sidebar.slider('Exponent factor',0,10,5)
-            s1= st.sidebar.select_slider('Channel', ['blue', 'green', 'red'])
-            s2= st.sidebar.select_slider('Channel', ['blue', 'green', 'red', 'none'])
-            l_d = st.sidebar.select_slider('Light or Dark', ['light', 'dark'])
+        elif option=="Cartoon":
+            kernel = st.sidebar.slider('Select kernel size', 3, 15, 3, step =2)
+            area_size = st.sidebar.slider('Select pixel neighborhood size', 3, 15, 9, step =2)
+            
 
         submit = st.form_submit_button(label='Submit')
     
@@ -212,8 +199,8 @@ def applyFilter(option, input_format, file):
                     img=colorExtract(img, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                 elif option=="Color Focus":
                     img=colorFocus(img, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
-                elif option =="Duo-tone":
-                    img=duotone(img,exp, [s1,s2], l_d)
+                elif option =="Cartoon":
+                    img=cartoon(img, kernel, area_size)
                 cv2.imwrite("out.png", img)
         
         # Videos
@@ -245,8 +232,8 @@ def applyFilter(option, input_format, file):
                         frame=colorExtract(frame, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
                     elif option=="Color Focus":
                         frame=colorFocus(frame, [l_hue, l_saturation, l_value], [u_hue, u_saturation, u_value])
-                    elif option=="Duo-tone":
-                        frame=duotone(frame, exp, [s1,s2], l_d)
+                    elif option=="Cartoon":
+                        frame=cartoon(frame, kernel)
                     
                     # Save altered video frame into output file
                     out.write(frame)
@@ -274,7 +261,6 @@ st.write("An app to apply filters on your videos or images!")
 # Option for user to upload image or video file
 file = st.sidebar.file_uploader("Please upload an image or video file", type=["jpg", "png", "jpeg","mp4"])
 path = os.path.dirname(__file__)
-# my_file = path+str(file.name)
 col1, col2= st.columns(2)
 
 if file is None:
@@ -284,13 +270,14 @@ else:
     #User selects filter to apply
     option = st.sidebar.selectbox(
         'Which filter would you like to apply to your image?',
-        ('Brightness','Pencil Sketch','Negative', 'Color Extract', 'Color Focus', 'Duo-tone'))
+        ('Brightness','Pencil Sketch','Negative', 'Color Extract', 'Color Focus', 'Cartoon'))
     
     # If file is an image, open and display the image, call applyFilter on it, and display output image.
     if file.name.split(".")[1]!="mp4":
         image = Image.open(file)
         img = np.array(image)
         cv2.imwrite("input.png",cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR))
+
         with col1:
             st.text("Your original image")
             st.image(image, use_column_width=True)
